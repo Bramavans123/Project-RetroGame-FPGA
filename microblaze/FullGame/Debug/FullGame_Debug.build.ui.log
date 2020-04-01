@@ -1,0 +1,26 @@
+2020-04-01T15:24:24.442648800255-15:24:24 **** Incremental Build of configuration Debug for project FullGame ****
+000-make all 
+000-'Building file: ../src/GameLogic.cpp'
+000-'Invoking: MicroBlaze g++ compiler'
+000-mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GameLogic.o" -ID:/Programming/VivadoProjects/FullGame_1/export/FullGame_1/sw/FullGame_1/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/GameLogic.d" -MT"src/GameLogic.o" -o "src/GameLogic.o" "../src/GameLogic.cpp"
+000-'Finished building: ../src/GameLogic.cpp'
+000-' '
+000-'Building file: ../src/main.cpp'
+000-'Invoking: MicroBlaze g++ compiler'
+000-mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -ID:/Programming/VivadoProjects/FullGame_1/export/FullGame_1/sw/FullGame_1/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+000-'Finished building: ../src/main.cpp'
+000-' '
+000-'Building target: FullGame.elf'
+000-'Invoking: MicroBlaze g++ linker'
+000-mb-g++ -Wl,-T -Wl,../src/lscript.ld -LD:/Programming/VivadoProjects/FullGame_1/export/FullGame_1/sw/FullGame_1/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "FullGame.elf"  ./src/Candy.o ./src/Enemy.o ./src/GameLogic.o ./src/Player.o ./src/entity.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+000-'Finished building target: FullGame.elf'
+000-' '
+000-'Invoking: MicroBlaze Print Size'
+000-mb-size FullGame.elf  |tee "FullGame.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  73104	   1512	  37040	 111656	  1b428	FullGame.elf
+000-'Finished building: FullGame.elf.size'
+000-' '
+00255-
+15:24:26 Build Finished (took 1s.635ms)
+
